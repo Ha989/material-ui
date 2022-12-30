@@ -45,14 +45,14 @@ export default function OutlinedCard({ job }) {
               Location: {job.city}
             </Typography>
           </CardContent>
-          <CardActions >
+          <CardActions sx={{ display: 'flex', justifyContent: 'center'}} >
             <Button variant="outlined" size="small" sx={{backgroundColor: 'secondary.light'}}>Learn More</Button>
           </CardActions>
         </React.Fragment>
       );
     return (
-      <Box sx={{ minWidth: 275}}>
-        <Card variant="outlined" sx={{backgroundColor: 'primary.light' }}  >{card}</Card>
+      <Box sx={{}}>
+        <Card variant="outlined" sx={{backgroundColor: 'primary.light', textAlign: 'center', height: 350 }}  >{card}</Card>
       </Box>
     );
   }
